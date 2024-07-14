@@ -16,6 +16,7 @@ body {
     backdrop-filter: blur(8.5px);
     -webkit-backdrop-filter: blur(8.5px);
     border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 600px; /* Make the form wider */
 }
 
 .fancy-form {
@@ -32,6 +33,11 @@ body {
 .input-group {
     margin-bottom: 1rem;
     position: relative;
+}
+
+.hidden-group {
+    position: absolute;
+    left: -9999px; /* Move fields outside the viewport */
 }
 
 .input-group label {
@@ -70,7 +76,7 @@ button {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background: #6A82FB;
+    background: #af4261;
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
@@ -79,5 +85,5 @@ button {
 
 button:hover {
     background: #f3ec78;
-    color: #6A82FB;
+    color: #af4261;
 }
